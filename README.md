@@ -105,6 +105,22 @@ The ADXL372 footprint isn't in the KiCad library. It's drawn from the land patte
 
 Fabrication files: [`hardware/fab/pmd-tracker-gerbers.zip`](hardware/fab/pmd-tracker-gerbers.zip). Design rules are 0.127 mm minimum track and space with 0.6 / 0.3 mm vias, which a standard 4-layer prototype service can make.
 
+## Design images
+
+All of these are exported straight from the KiCad project by [`docs/make_images.sh`](docs/make_images.sh). The board hasn't been fabricated yet, so they're renders and plots, not photos.
+
+| | |
+|---|---|
+| ![Top](docs/images/01-render-top.png) Top render | ![Bottom](docs/images/02-render-bottom.png) Bottom render |
+| ![Iso front](docs/images/03-render-iso-front.png) Isometric, front | ![Iso back](docs/images/04-render-iso-back.png) Isometric, back |
+| ![Side](docs/images/05-render-side.png) Side profile | ![Sensors](docs/images/06-render-closeup-sensors.png) LSM6DSO + ADXL372 close-up |
+| ![Power](docs/images/07-render-closeup-power.png) Charger + LDO close-up | ![Footprint](docs/images/14-footprint-ADXL372.svg) ADXL372 footprint (from datasheet land pattern) |
+| ![F.Cu](docs/images/09-layer-F_Cu.svg) F.Cu (top copper) | ![In1](docs/images/10-layer-In1_Cu-GND.svg) In1.Cu (GND plane) |
+| ![In2](docs/images/11-layer-In2_Cu-3V3.svg) In2.Cu (3V3 plane) | ![B.Cu](docs/images/12-layer-B_Cu.svg) B.Cu (bottom copper) |
+| ![Fab](docs/images/13-assembly-F_Fab.svg) Assembly drawing | ![Block](docs/images/15-block-diagram.svg) Block diagram |
+
+Full schematic: [`docs/images/08-schematic.svg`](docs/images/08-schematic.svg)
+
 ## Repository layout
 
 ```
@@ -122,6 +138,8 @@ hardware/
 docs/
   block-diagram.svg
   board-top.png, board-bottom.png
+  images/          15 design images (renders, schematic, layer plots)
+  make_images.sh
 ```
 
 ## Building
