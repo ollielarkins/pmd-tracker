@@ -34,4 +34,9 @@ layer 12-layer-B_Cu.svg B.Cu
   -o "$O" ../hardware/kicad/pmd.pretty
 mv "$O/ADI_LGA-16_3x3.25mm_P0.5mm.svg" "$O/14-footprint-ADXL372.svg"
 cp block-diagram.svg "$O/15-block-diagram.svg"
+
+# Everything as PNG: rasterise the SVG exports, then drop them.
+python svg2png.py 4000 "$O/08-schematic.svg"
+python svg2png.py 1600 "$O"/09-*.svg "$O"/1[0-5]-*.svg
+rm -f "$O"/*.svg
 ls $O

@@ -114,12 +114,12 @@ All of these are exported straight from the KiCad project by [`docs/make_images.
 | ![Top](docs/images/01-render-top.png) Top render | ![Bottom](docs/images/02-render-bottom.png) Bottom render |
 | ![Iso front](docs/images/03-render-iso-front.png) Isometric, front | ![Iso back](docs/images/04-render-iso-back.png) Isometric, back |
 | ![Side](docs/images/05-render-side.png) Side profile | ![Sensors](docs/images/06-render-closeup-sensors.png) LSM6DSO + ADXL372 close-up |
-| ![Power](docs/images/07-render-closeup-power.png) Charger + LDO close-up | ![Footprint](docs/images/14-footprint-ADXL372.svg) ADXL372 footprint (from datasheet land pattern) |
-| ![F.Cu](docs/images/09-layer-F_Cu.svg) F.Cu (top copper) | ![In1](docs/images/10-layer-In1_Cu-GND.svg) In1.Cu (GND plane) |
-| ![In2](docs/images/11-layer-In2_Cu-3V3.svg) In2.Cu (3V3 plane) | ![B.Cu](docs/images/12-layer-B_Cu.svg) B.Cu (bottom copper) |
-| ![Fab](docs/images/13-assembly-F_Fab.svg) Assembly drawing | ![Block](docs/images/15-block-diagram.svg) Block diagram |
+| ![Power](docs/images/07-render-closeup-power.png) Charger + LDO close-up | ![Footprint](docs/images/14-footprint-ADXL372.png) ADXL372 footprint (from datasheet land pattern) |
+| ![F.Cu](docs/images/09-layer-F_Cu.png) F.Cu (top copper) | ![In1](docs/images/10-layer-In1_Cu-GND.png) In1.Cu (GND plane) |
+| ![In2](docs/images/11-layer-In2_Cu-3V3.png) In2.Cu (3V3 plane) | ![B.Cu](docs/images/12-layer-B_Cu.png) B.Cu (bottom copper) |
+| ![Fab](docs/images/13-assembly-F_Fab.png) Assembly drawing | ![Block](docs/images/15-block-diagram.png) Block diagram |
 
-Full schematic: [`docs/images/08-schematic.svg`](docs/images/08-schematic.svg)
+Full schematic: [`docs/images/08-schematic.svg`](docs/images/08-schematic.png)
 
 ## Repository layout
 
