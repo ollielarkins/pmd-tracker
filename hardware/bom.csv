@@ -1,7 +1,20 @@
-Reference,Qty,Part,Manufacturer,MPN,Function,Notes
-U1,1,nRF52840 SoC,Nordic Semiconductor,nRF52840-QIAA-R,"MCU, BLE 5",aQFN73; Zephyr RTOS
-U2,1,LSM6DSO 6-axis IMU,STMicroelectronics,LSM6DSOTR,Motion sensor (accel + gyro),SPI
-U3,1,ADXL372 high-g accelerometer,Analog Devices,ADXL372BCCZ-RL7,Impact detection (±200 g),SPI
-U4,1,u-blox MAX-M10S GNSS module,u-blox,MAX-M10S-00B,GNSS at 10 Hz,UART
-BT1,1,LiPo cell 3.7 V 500 mAh,TBD,TBD,Battery,Pick a cell that fits the enclosure and 90 g mass budget
--,-,"Charger, regulator, antennas, crystals, passives, connectors",-,-,Support circuitry,Replace this row with the KiCad BOM export
+"Reference","Value","MPN","Footprint","Qty"
+"C1,C2","4.7u","","Capacitor_SMD:C_0603_1608Metric","2"
+"C3","1u","","Capacitor_SMD:C_0402_1005Metric","1"
+"C4,C6","10u","","Capacitor_SMD:C_0603_1608Metric","2"
+"C5,C7-C12","100n","","Capacitor_SMD:C_0402_1005Metric","7"
+"D1","Green","","LED_SMD:LED_0603_1608Metric","1"
+"D2","Red","","LED_SMD:LED_0603_1608Metric","1"
+"J1","USB-C","TYPE-C-31-M-12","Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12","1"
+"J2","U.FL","U.FL-R-SMT-1(10)","Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical","1"
+"J3","JST PH 2-pin (battery)","S2B-PH-SM4-TB(LF)(SN)","Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal","1"
+"R1,R2","5.1k","","Resistor_SMD:R_0402_1005Metric","2"
+"R3","4.7k","","Resistor_SMD:R_0402_1005Metric","1"
+"R4,R5","1k","","Resistor_SMD:R_0402_1005Metric","2"
+"R6,R7","1M","","Resistor_SMD:R_0402_1005Metric","2"
+"U1","MDBT50Q-1MV2","MDBT50Q-1MV2","RF_Module:Raytac_MDBT50Q","1"
+"U2","MAX-M10S","MAX-M10S-00B","RF_GPS:ublox_MAX","1"
+"U3","ADXL372","ADXL372BCCZ-RL7","pmd:ADI_LGA-16_3x3.25mm_P0.5mm","1"
+"U4","LSM6DSO","LSM6DSOTR","Package_LGA:LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y","1"
+"U5","MCP73831-2-OT","MCP73831T-2ACI/OT","Package_TO_SOT_SMD:SOT-23-5","1"
+"U6","AP2112K-3.3","AP2112K-3.3TRG1","Package_TO_SOT_SMD:SOT-23-5","1"

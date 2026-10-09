@@ -1,2 +1,7 @@
 build/
 *.exe
+__pycache__/
+*.kicad_prl
+*-backups/
+fp-info-cache
+logs/
