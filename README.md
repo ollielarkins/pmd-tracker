@@ -6,7 +6,7 @@ A wearable performance tracker for rugby. It sits in a jersey pouch between the 
 
 *KiCad 3D render of the 45 x 30 mm 4-layer board (not yet fabricated).*
 
-![System block diagram](docs/block-diagram.svg)
+![System block diagram](docs/images/15-block-diagram.png)
 
 ## What it measures
 
