@@ -119,7 +119,7 @@ All of these are exported straight from the KiCad project by [`docs/make_images.
 | ![In2](docs/images/11-layer-In2_Cu-3V3.png) In2.Cu (3V3 plane) | ![B.Cu](docs/images/12-layer-B_Cu.png) B.Cu (bottom copper) |
 | ![Fab](docs/images/13-assembly-F_Fab.png) Assembly drawing | ![Block](docs/images/15-block-diagram.png) Block diagram |
 
-Full schematic: [`docs/images/08-schematic.svg`](docs/images/08-schematic.png)
+Full schematic: [`docs/images/08-schematic.png`](docs/images/08-schematic.png)
 
 ## Repository layout
 
