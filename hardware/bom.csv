@@ -1,0 +1,7 @@
+Reference,Qty,Part,Manufacturer,MPN,Function,Notes
+U1,1,nRF52840 SoC,Nordic Semiconductor,nRF52840-QIAA-R,"MCU, BLE 5",aQFN73; Zephyr RTOS
+U2,1,LSM6DSO 6-axis IMU,STMicroelectronics,LSM6DSOTR,Motion sensor (accel + gyro),SPI
+U3,1,ADXL372 high-g accelerometer,Analog Devices,ADXL372BCCZ-RL7,Impact detection (±200 g),SPI
+U4,1,u-blox MAX-M10S GNSS module,u-blox,MAX-M10S-00B,GNSS at 10 Hz,UART
+BT1,1,LiPo cell 3.7 V 500 mAh,TBD,TBD,Battery,Pick a cell that fits the enclosure and 90 g mass budget
+-,-,"Charger, regulator, antennas, crystals, passives, connectors",-,-,Support circuitry,Replace this row with the KiCad BOM export

@@ -1,0 +1,35 @@
+/* nRF52840-DK bring-up wiring for the PMD sensors (stand-in for the custom board).
+ * ADXL372 + LSM6DSO share the Arduino SPI header; MAX-M10S on the Arduino UART. */
+
+&arduino_spi {
+	status = "okay";
+	cs-gpios = <&arduino_header 16 GPIO_ACTIVE_LOW>,  /* D10: ADXL372 */
+		   <&arduino_header 15 GPIO_ACTIVE_LOW>;  /* D9: LSM6DSO */
+
+	adxl372: adxl372@0 {
+		compatible = "adi,adxl372";
+		reg = <0>;
+		spi-max-frequency = <8000000>;
+		odr = <1>;  /* 800 Hz */
+		bw = <2>;   /* 800 Hz anti-alias */
+	};
+
+	/* ponytail: on the bus but unused by the metrics yet; add when
+	 * tackle orientation / step detection is wanted. */
+	lsm6dso: lsm6dso@1 {
+		compatible = "st,lsm6dso";
+		reg = <1>;
+		spi-max-frequency = <8000000>;
+	};
+};
+
+&arduino_serial {
+	status = "okay";
+	current-speed = <115200>;
+
+	gnss: gnss {
+		compatible = "u-blox,m10";
+		initial-baudrate = <9600>;
+		fix-rate = <100>;  /* ms -> 10 Hz */
+	};
+};
